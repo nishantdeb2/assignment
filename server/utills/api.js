@@ -113,10 +113,11 @@ class API {
 
 				if(schemas.hasOwnProperty(`${path.split(pathSeparator).pop()}Schema`)){
 					const validator = validatebody(params, schemas[`${path.split(pathSeparator).pop()}Schema`]);
+					
 					if(validator.status == 400)
 						throw new API.Exception(400, validator.message);
 				}
-				
+
 				const result = await obj[path.split(pathSeparator).pop()](params);
 
 				obj.result = {
