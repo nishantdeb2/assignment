@@ -1,0 +1,12 @@
+{
+  "port": 3000,
+  "http": false,
+  "secret_key": "SECRET_KEY",
+    "mongo_db":{
+      "dev":{
+          "host":"HOST",
+          "db":"DB_NAME"
+      }
+  }
+}
+

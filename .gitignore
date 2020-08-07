@@ -1,0 +1,7 @@
+
+.DS_Store
+config/*
+!config/sample.json
+node_modules/*
+package-lock.json
+env
