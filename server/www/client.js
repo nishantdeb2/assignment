@@ -177,7 +177,7 @@ exports.getMAxBill = class extends API{
                 }
         )
        
-        const data = commonFun.aggregate('clients', aggregate);
+        const data = await commonFun.aggregate('clients', aggregate);
 
         if(data.length)
             return data
