@@ -17,16 +17,6 @@ Fill in the necessery details in the json file and start your pm2 instances.
 
 ## Start Server
 
-### Unix
-```
-NODE_ENV='dev' pm2 start bin/www --name ipropin-backend
-```
-
-### Windows
-```
-$env:NODE_ENV="env"
-pm2 start bin/www --name ipropin-backend
-```
 
 ### Local Development
 ```
